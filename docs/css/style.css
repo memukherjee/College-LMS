@@ -107,6 +107,7 @@ input:-webkit-autofill{
 .btn-login {
   color: #fff;
   border-radius: 50px;
+  font-size: 1.2rem;
 }
 
 .btn-login:hover {
