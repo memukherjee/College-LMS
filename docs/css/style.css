@@ -52,7 +52,9 @@ body {
   border: none;
 }
 
-
+.label{
+  font-size: 1rem;
+}
 
 .form-signin .checkbox {
   font-weight: 400;
@@ -89,30 +91,17 @@ body {
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill{
+  -webkit-text-fill-color: #fff;
   color: #fff;
+  border: none;
+  border-bottom: 2px solid #ffffff;
   transition: background-color 5000s ease-in-out 0s;
 }
 
-input:-internal-autofill-selected{
-  color: #fff;
-}
-
-
-/* .btn-login {
-  background-image: linear-gradient(
-    to right,
-    #ffffff 0%,
-    #481f49 51%,
-    #ffffff 100%
-  );
-} */
 .btn-login {
-  /* transition: 0.5s;
-  background-size: 200% auto; */
-  /* border: 0; */
   color: #fff;
   border-radius: 50px;
 }
@@ -120,7 +109,7 @@ input:-internal-autofill-selected{
 .btn-login:hover {
   color: #040d21;
 }
-
-#copyright{
-  color: rgb(207, 207, 207) !important;
+.btn-login:focus {
+  box-shadow: none;
 }
+
