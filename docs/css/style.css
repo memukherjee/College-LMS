@@ -97,6 +97,7 @@ input:-webkit-autofill{
   -webkit-text-fill-color: #fff;
   color: #fff;
   border: none;
+  caret-color: #fff;
   border-bottom: 2px solid #ffffff;
   transition: background-color 5000s ease-in-out 0s;
 }
