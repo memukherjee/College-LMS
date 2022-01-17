@@ -46,16 +46,22 @@ body {
 }
 
 .card{
-  padding: 2.5rem 7rem;
+  padding: 5vh 25%;
   border-radius: 5%;
   background: rgba(255, 255, 255, 0.1);
   border: none;
+  min-width: 250px;
 }
 
-.label{
+form{
+  min-width: 100px;
+}
+
+#label-password,#label-email{
   text-align: left;
-  font-size: 2.4vh;
-  width: 100%;
+  font-size: 2.25vh;
+  padding-right: 0;
+  white-space: nowrap;
 }
 
 
@@ -79,6 +85,10 @@ body {
   color: #fff;
   border-bottom: 2px solid #ffffff;
   background: transparent !important;
+}
+
+#floatingPassword,#floatingInput{
+
 }
 
 .form-signin input:focus{
