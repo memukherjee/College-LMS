@@ -54,7 +54,7 @@ body {
 
 .label{
   text-align: left;
-  font-size: 1vw;
+  font-size: 2.4vh;
   width: 100%;
 }
 
@@ -63,7 +63,7 @@ body {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
+.email-input {
   margin-bottom: 10px;
   border: none;
   border-radius: 0%;
@@ -72,7 +72,7 @@ body {
   background: transparent !important;
 }
 
-.form-signin input[type="password"] {
+.password-input {
   margin-bottom: 20px;
   border: none;
   border-radius: 0%;
@@ -101,10 +101,23 @@ input:-webkit-autofill{
   transition: background-color 5000s ease-in-out 0s;
 }
 
+#show-password{
+  border: none;
+}
+
+#show-password:hover{
+  background-color: transparent;
+  color: rgb(201, 201, 201);
+}
+
+#show-password:focus{
+  box-shadow: none;
+}
+
 .btn-login {
   color: #fff;
   border-radius: 50px;
-  font-size: 1.2vw;
+  font-size: 2.5vh;
 }
 
 .btn-login:hover {

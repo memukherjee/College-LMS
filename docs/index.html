@@ -39,43 +39,78 @@
   </head>
   <body class="text-center">
     <main class="form-signin">
-    <div class="card">
-      <form action="/" method="post">
-        <img
-          class="mb-4 logo"
-          src="images/logo-dark.png"
-          alt="logo"
-        />
-        <h1 class="h3 mb-3 fw-normal title">College LMS</h1>
+      <div class="card">
+        <form action="/" method="post">
+          <img class="mb-4 logo" src="images/logo-dark.png" alt="logo" />
+          <h1 class="h3 mb-3 fw-normal title">College LMS</h1>
+          <div class="row">
+            <div class="form-floating col-12">
+              <input
+                type="email"
+                class="form-control email-input"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label class="text-light label" for="floatingInput"
+                ><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email
+                address</label
+              >
+            </div>
+            <div class="form-floating text-light col-10">
+              <input
+                type="password"
+                class="form-control password-input"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label class="text-light label" for="floatingPassword"
+                ><i class="fas fa-lock"></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;Password</label
+              >
+            </div>
+            <button
+              id="show-password"
+              type="button"
+              class="btn btn-outline-light col-2"
+              onclick="togglePassword()"
+            >
+              <i id="eye" class="far fa-eye-slash"></i>
+            </button>
+          </div>
 
-        <div class="form-floating">
-          <input
-            type="email"
-            class="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
-          <label class="text-light label" for="floatingInput"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email address</label>
-        </div>
-        <div class="form-floating text-light">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label class="text-light label" for="floatingPassword"><i class="fas fa-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp;Password</label>
-        </div>
-        <button class="w-100 btn btn-lg btn-outline-light btn-login mb-2" type="submit">
-          Log in
-        </button>
-        <button class="w-100 btn btn-lg btn-outline-light btn-login" type="submit">
-          Sign up
-        </button>
-        <p id="copyright" class="mt-5 mb-3 text-muted">&copy; 2022</p>
-      </form>
-    </div>
+          <button
+            class="w-100 btn btn-lg btn-outline-light btn-login mb-2"
+            type="submit"
+          >
+            Log in
+          </button>
+          <button
+            class="w-100 btn btn-lg btn-outline-light btn-login"
+            type="submit"
+          >
+            Sign up
+          </button>
+          <p id="copyright" class="mt-5 mb-3 text-muted">&copy; 2022</p>
+        </form>
+      </div>
     </main>
+
+    <script>
+      function togglePassword(e) {
+        var x = document.getElementById("floatingPassword");
+        var eye = document.getElementById("eye")
+        if (x.type === "password") {
+          x.type = "text";
+          eye.classList.toggle("fa-eye-slash");
+          eye.classList.toggle("fa-eye");
+        } else {
+          x.type = "password";
+          eye.classList.toggle("fa-eye-slash");
+          eye.classList.toggle("fa-eye");
+        }
+        console.log(e);
+      }
+    </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script
