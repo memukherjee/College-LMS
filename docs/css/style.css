@@ -40,9 +40,10 @@ body {
   width: 40%;
 }
 
-.title{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#title{
   color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
 }
 
 .card{
@@ -60,6 +61,8 @@ form{
 #label-password,#label-email{
   text-align: left;
   font-size: 2.25vh;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
   padding-right: 0;
   white-space: nowrap;
 }
@@ -128,6 +131,8 @@ input:-webkit-autofill{
   color: #fff;
   border-radius: 50px;
   font-size: 2.5vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .btn-login:hover {
