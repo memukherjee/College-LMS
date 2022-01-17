@@ -53,7 +53,9 @@ body {
 }
 
 .label{
+  text-align: left;
   font-size: 1rem;
+  width: 100%;
 }
 
 .form-signin .checkbox {
