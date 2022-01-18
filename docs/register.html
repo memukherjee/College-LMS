@@ -47,7 +47,7 @@
     />
     <title>Create account</title>
   </head>
-  <body class="text-center">
+  <body class="text-center" onload="departmentLabelFormatter()">
     <main class="form-signin">
       <div class="card">
         <form action="/" method="post">
@@ -57,14 +57,16 @@
           <div class="row">
             <div class="form-floating col-12">
               <input
-                type="name"
+                type="text"
                 name="name"
-                class="form-control email-input"
+                autocomplete="cc-name"
+                class="form-control name-input"
                 id="floatingInput"
-                placeholder="FirstName LastName"
+                placeholder="Name"
+                required
               />
               <label
-                id="label-email"
+                id="label-name"
                 class="text-light label"
                 for="floatingInput"
                 ><i class="far fa-user-circle"></i> Name</label
@@ -72,8 +74,8 @@
             </div>
 
             <div class="form-floating col-12">
-                <select class="form-select dept-input" id="floatingSelect" aria-label="Floating label select example">
-                    <option class="dept-option" selected>Select your department</option>
+                <select onclick="departmentLabelFormatter()" class="form-select dept-input" id="floatingSelect" aria-label="Floating label select example" required>
+                    <option class="dept-option" selected disabled value="" ></option>
                     <option class="dept-option" value="1">CSE</option>
                     <option class="dept-option" value="2">IT</option>
                     <option class="dept-option" value="3">ECE</option>
@@ -83,8 +85,8 @@
                     <option class="dept-option" value="7">AEIE</option>
                   </select>
                 <label
-                  id="label-email"
-                  class="text-light label"
+                  id="label-dept"
+                  class="text-light label dept-blank"
                   for="floatingSelect"
                   ><i class="fas fa-user-graduate"></i> Department</label>
               </div>
@@ -96,6 +98,7 @@
                 class="form-control email-input"
                 id="floatingInput"
                 placeholder="name@example.com"
+                required
               />
               <label
                 id="label-email"
@@ -111,6 +114,7 @@
                 class="form-control password-input"
                 id="floatingPassword"
                 placeholder="Password"
+                required
               />
               <label
                 id="label-password"
@@ -141,7 +145,7 @@
     </main>
 
     <script>
-      function togglePassword(e) {
+      function togglePassword() {
         var x = document.getElementById("floatingPassword");
         var eye = document.getElementById("eye");
         if (x.type === "password") {
@@ -153,7 +157,20 @@
           eye.classList.toggle("fa-eye-slash");
           eye.classList.toggle("fa-eye");
         }
-        console.log(e);
+      }
+
+      function departmentLabelFormatter(){
+        var l = document.getElementById("label-dept")
+        var input = document.getElementById("floatingSelect")
+        console.log(l.innerText);
+        var value = input.options[input.selectedIndex].value
+        console.log(value);
+        if(value===''){
+          l.classList.add("dept-blank")
+        }
+        else{
+          l.classList.remove("dept-blank")
+        }
       }
     </script>
 

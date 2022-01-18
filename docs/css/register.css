@@ -66,8 +66,11 @@ form {
   min-width: 100px;
 }
 
+
 #label-password,
-#label-email {
+#label-email,
+#label-name,
+#label-dept {
   text-align: left;
   font-size: 1rem;
   font-family: "Roboto Mono", monospace;
@@ -80,7 +83,7 @@ form {
   z-index: 2;
 }
 
-.email-input {
+.email-input, .name-input {
   margin-bottom: 10px;
   border: none;
   border-radius: 0%;
@@ -171,4 +174,24 @@ input::-ms-clear {
 }
 .btn-login:focus {
   box-shadow: none;
+}
+
+
+/* 
+.form-floating>label{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  padding:1rem .75rem;
+  pointer-events:none;
+  border:1px solid transparent;
+  transform-origin:0 0;
+  transition:opacity .1s ease-in-out,transform .1s ease-in-out
+} 
+*/
+
+.dept-blank{
+  opacity: 1 !important;
+  transform: scale(1) translateY(0rem) translateX(0rem) !important;
 }
