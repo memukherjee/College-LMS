@@ -55,20 +55,26 @@
             <nobr>Create</nobr> <nobr>Account</nobr>
           </h1>
           <div class="row">
+            <div name="role" class="btn-group" id="btn-grp" role="group" aria-label="Basic outlined example">
+              <input value="student" type="radio" class="btn-check" name="role" id="option1" autocomplete="off" checked>
+              <label id="label-student" class="btn btn-outline-light" for="option1">Student</label>
+              <input value="teacher" type="radio" class="btn-check" name="role" id="option2" autocomplete="off">
+              <label id="label-teacher" class="btn btn-outline-light" for="option2">Teacher</label>
+            </div>
             <div class="form-floating col-12">
               <input
                 type="text"
                 name="name"
                 autocomplete="cc-name"
                 class="form-control name-input"
-                id="floatingInput"
+                id="floatingName"
                 placeholder="Name"
                 required
               />
               <label
                 id="label-name"
                 class="text-light label"
-                for="floatingInput"
+                for="floatingName"
                 ><i class="far fa-user-circle"></i> Name</label
               >
             </div>
@@ -162,9 +168,7 @@
       function departmentLabelFormatter(){
         var l = document.getElementById("label-dept")
         var input = document.getElementById("floatingSelect")
-        console.log(l.innerText);
         var value = input.options[input.selectedIndex].value
-        console.log(value);
         if(value===''){
           l.classList.add("dept-blank")
         }

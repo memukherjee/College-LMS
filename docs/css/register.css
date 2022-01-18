@@ -66,7 +66,6 @@ form {
   min-width: 100px;
 }
 
-
 #label-password,
 #label-email,
 #label-name,
@@ -83,7 +82,8 @@ form {
   z-index: 2;
 }
 
-.email-input, .name-input {
+.email-input,
+.name-input {
   margin-bottom: 10px;
   border: none;
   border-radius: 0%;
@@ -106,9 +106,9 @@ form {
   text-align: left;
 }
 
-.dept-option{
-    background: rgba(99, 49, 126, 0.5);
-    color: #000;
+.dept-option {
+  background: rgba(99, 49, 126, 0.5);
+  color: #000;
 }
 
 .password-input {
@@ -122,7 +122,8 @@ form {
   font-weight: 100;
 }
 
-.form-signin input:focus,.form-signin select:focus {
+.form-signin input:focus,
+.form-signin select:focus {
   border: none;
   border-radius: 0%;
   border-bottom: 2px solid #ffffff;
@@ -176,6 +177,12 @@ input::-ms-clear {
   box-shadow: none;
 }
 
+#label-student,
+#label-teacher,
+#label-teacher:focus,
+#label-student:focus{
+  box-shadow: none;
+}
 
 /* 
 .form-floating>label{
@@ -191,7 +198,28 @@ input::-ms-clear {
 } 
 */
 
-.dept-blank{
+.btn,
+.btn-check.active.focus,
+.btn-check.active:focus,
+.btn-check.focus,
+.btn-check.focus:active,
+.btn-check:active:focus,
+.btn-check:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  outline-offset: -2px;
+}
+
+.dept-blank {
   opacity: 1 !important;
   transform: scale(1) translateY(0rem) translateX(0rem) !important;
 }
