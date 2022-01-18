@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,24 +23,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <link rel="shortcut icon" href="images/logo-dark.png" type="image/x-icon" />
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -50,11 +38,14 @@
       <div class="card">
         <form action="/" method="post">
           <img class="mb-4 logo" src="images/logo-dark.png" alt="logo" />
-          <h1 id="title" class="h3 mb-3">College LMS</h1>
+          <h1 id="title" class="h3 mb-3">
+            <nobr>College</nobr> <nobr>LMS</nobr>
+          </h1>
           <div class="row">
             <div class="form-floating col-12">
               <input
                 type="email"
+                name="email"
                 class="form-control email-input"
                 id="floatingInput"
                 placeholder="name@example.com"
@@ -66,9 +57,10 @@
                 ><i class="fas fa-envelope"></i> Email address</label
               >
             </div>
-            <div class="form-floating text-light col-10">
+            <div class="form-floating text-light col">
               <input
                 type="password"
+                name="password"
                 class="form-control password-input"
                 id="floatingPassword"
                 placeholder="Password"
