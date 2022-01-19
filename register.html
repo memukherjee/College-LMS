@@ -80,7 +80,7 @@
             </div>
 
             <div class="form-floating col-12">
-                <select onclick="departmentLabelFormatter()" class="form-select dept-input" id="floatingSelect" aria-label="Floating label select example" required>
+                <select onchange="departmentLabelFormatter()" class="form-select dept-input" id="floatingSelect" aria-label="Floating label select example" required>
                     <option class="dept-option" selected disabled value="" ></option>
                     <option class="dept-option" value="1">CSE</option>
                     <option class="dept-option" value="2">IT</option>
@@ -98,7 +98,7 @@
               </div>
 
               <div class="form-floating col-12">
-                <select onclick="yearLabelFormatter()" class="form-select year-input" id="floatingSelectYear" aria-label="Floating label select example" required>
+                <select onchange="yearLabelFormatter()" class="form-select year-input" id="floatingSelectYear" aria-label="Floating label select example" required>
                     <option id="year 0" class="year-option" selected disabled value="" ></option>
                     <option id="year 1" class="year-option" value="1">1st</option>
                     <option id="year 2" class="year-option" value="2">2nd</option>
