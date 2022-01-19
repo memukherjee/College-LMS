@@ -51,6 +51,8 @@
       }
 
       body {
+        display: flex;
+        align-items: center;
         background: linear-gradient(
           -45deg,
           #7a0707,
@@ -62,28 +64,71 @@
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
       }
-      .card {
-        margin: 0 25%;
-        margin-top: 9%;
-        padding: 0;
+
+      html,
+      body {
+        height: 100%;
       }
+
+      body {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 50%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 500px) {
+        body{
+            margin: 0;
+            width: 100%;
+        }
+      }
+
+      .card {
+        padding: 5%;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.507);
+        border: none;
+        min-width: 250px;
+        transition-delay: 0s;
+      }
+
       .card-padding {
-        padding: 3% 5%;
+        padding: 10vh 20%;
         transition: 1s;
-        transition-delay: 0.25s
+        transition-delay: 0.25s;
+      }
+
+      .btn,
+      .btn-check.active.focus,
+      .btn-check.active:focus,
+      .btn-check.focus,
+      .btn-check.focus:active,
+      .btn-check:active:focus,
+      .btn-check:focus,
+      .btn.active.focus,
+      .btn.active:focus,
+      .btn.focus,
+      .btn.focus:active,
+      .btn:active:focus,
+      .btn:focus {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        outline-offset: -2px;
       }
     </style>
   </head>
 
-  <body onload="onLoad()">
-    <div
-      id="card"
-      class="card text-light"
-      style="border-radius: 15px; background-color: rgba(255, 255, 255, 0.479)"
-    >
-      <div class="container-fluid py-5 text-center">
+  <body class="text-center" onload="onLoad()">
+    <div class="container">
+      <div id="card" class="card">
         <h1 class="display-5 text-danger fw-bold mb-3">
-          <i class="fas fa-exclamation-triangle mb-3"></i><br />Login Failed !
+          <i class="fas fa-exclamation-triangle mb-3"></i><br />Login Failed!
         </h1>
         <p class="col-md-8 fs-4 text-danger mb-4" style="width: 100%">
           The email id or password you have entered is invalid.
