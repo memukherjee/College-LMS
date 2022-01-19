@@ -55,13 +55,26 @@ body {
 }
 
 .card {
-  padding: 5vh 25%;
+  padding: 5%;
   border-radius: 5%;
   background: rgba(255, 255, 255, 0.1);
   border: none;
   min-width: 250px;
 }
 
+/* @media screen and (min-width: 500px) { */
+  .card-padding {
+    padding: 5vh 20%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+/* } */
+
+/* @media screen and (max-width: 500px) {
+  .card {
+    padding: 5vh 20%;
+  }
+} */
 form {
   min-width: 100px;
 }

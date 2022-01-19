@@ -47,9 +47,9 @@
     />
     <title>Create account</title>
   </head>
-  <body class="text-center" onload="departmentLabelFormatter()">
+  <body class="text-center" onload="onLoad()">
     <main class="form-signin">
-      <div class="card">
+      <div id="card" class="card">
         <form action="/" method="post">
           <h1 id="title" class="h3 mb-3">
             <nobr>Create</nobr> <nobr>Account</nobr>
@@ -57,9 +57,9 @@
           <div class="row">
             <div name="role" class="btn-group" id="btn-grp" role="group" aria-label="Basic outlined example">
               <input value="student" type="radio" class="btn-check" name="role" id="option1" autocomplete="off" checked>
-              <label id="label-student" class="btn btn-outline-light" for="option1">Student</label>
+              <label onclick="activeStudent()" id="label-student" class="btn btn-outline-light" for="option1">Student</label>
               <input value="teacher" type="radio" class="btn-check" name="role" id="option2" autocomplete="off">
-              <label id="label-teacher" class="btn btn-outline-light" for="option2">Teacher</label>
+              <label onclick="activeTeacher()" id="label-teacher" class="btn btn-outline-light" for="option2">Teacher</label>
             </div>
             <div class="form-floating col-12">
               <input
@@ -95,6 +95,22 @@
                   class="text-light label dept-blank"
                   for="floatingSelect"
                   ><i class="fas fa-user-graduate"></i> Department</label>
+              </div>
+
+              <div class="form-floating col-12">
+                <select onclick="yearLabelFormatter()" class="form-select year-input" id="floatingSelectYear" aria-label="Floating label select example" required>
+                    <option id="year 0" class="year-option" selected disabled value="" ></option>
+                    <option id="year 1" class="year-option" value="1">1st</option>
+                    <option id="year 2" class="year-option" value="2">2nd</option>
+                    <option id="year 3" class="year-option" value="3">3rd</option>
+                    <option id="year 4" class="year-option" value="4">4th</option>
+                    <option id="year 5" class="year-option" value="5" disabled>NA</option>
+                  </select>
+                <label
+                  id="label-year"
+                  class="text-light label year-blank"
+                  for="floatingSelectYear"
+                  ><i class="fas fa-graduation-cap"></i> Year</label>
               </div>
 
             <div class="form-floating col-12">
@@ -150,33 +166,7 @@
       </div>
     </main>
 
-    <script>
-      function togglePassword() {
-        var x = document.getElementById("floatingPassword");
-        var eye = document.getElementById("eye");
-        if (x.type === "password") {
-          x.type = "text";
-          eye.classList.toggle("fa-eye-slash");
-          eye.classList.toggle("fa-eye");
-        } else {
-          x.type = "password";
-          eye.classList.toggle("fa-eye-slash");
-          eye.classList.toggle("fa-eye");
-        }
-      }
-
-      function departmentLabelFormatter(){
-        var l = document.getElementById("label-dept")
-        var input = document.getElementById("floatingSelect")
-        var value = input.options[input.selectedIndex].value
-        if(value===''){
-          l.classList.add("dept-blank")
-        }
-        else{
-          l.classList.remove("dept-blank")
-        }
-      }
-    </script>
+    <script src="js/register.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script

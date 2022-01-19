@@ -55,11 +55,12 @@ body {
 }
 
 .card {
-  padding: 5vh 25%;
+  padding: 5%;
   border-radius: 5%;
   background: rgba(255, 255, 255, 0.1);
   border: none;
   min-width: 250px;
+  transition-delay: 0s;
 }
 
 form {
@@ -69,7 +70,8 @@ form {
 #label-password,
 #label-email,
 #label-name,
-#label-dept {
+#label-dept,
+#label-year {
   text-align: left;
   font-size: 1rem;
   font-family: "Roboto Mono", monospace;
@@ -94,7 +96,7 @@ form {
   font-weight: 100;
 }
 
-.dept-input {
+.dept-input,.year-input {
   background: transparent;
   margin-bottom: 10px;
   border: none;
@@ -106,7 +108,7 @@ form {
   text-align: left;
 }
 
-.dept-option {
+.dept-option,.year-option {
   background: rgba(99, 49, 126, 0.5);
   color: #000;
 }
@@ -184,19 +186,18 @@ input::-ms-clear {
   box-shadow: none;
 }
 
-/* 
-.form-floating>label{
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  padding:1rem .75rem;
-  pointer-events:none;
-  border:1px solid transparent;
-  transform-origin:0 0;
-  transition:opacity .1s ease-in-out,transform .1s ease-in-out
-} 
-*/
+/* @media screen and (min-width: 500px) {
+  .card:hover{
+    padding: 5vh 22%;
+  }
+} */
+
+
+.card-padding{
+  padding: 5vh 20%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
 
 .btn,
 .btn-check.active.focus,
@@ -220,6 +221,11 @@ input::-ms-clear {
 }
 
 .dept-blank {
+  opacity: 1 !important;
+  transform: scale(1) translateY(0rem) translateX(0rem) !important;
+}
+
+.year-blank{
   opacity: 1 !important;
   transform: scale(1) translateY(0rem) translateX(0rem) !important;
 }
