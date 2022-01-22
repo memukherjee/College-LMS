@@ -80,19 +80,25 @@
       }
 
       @media screen and (max-width: 500px) {
-        body{
-            margin: 0;
-            width: 100%;
+        body {
+          margin: 0;
+          width: 100%;
         }
       }
 
       .card {
-        padding: 5%;
+        padding: 17%;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.507);
         border: none;
         min-width: 250px;
         transition-delay: 0s;
+      }
+
+      @media screen and (min-width: 900px) {
+        .card{
+          padding: 20%;
+        }
       }
 
       .card-padding {
@@ -121,6 +127,52 @@
         outline: none;
         outline-offset: -2px;
       }
+
+      #cry {
+        display: inline;
+        position: absolute;
+        width: 40%;
+        bottom: 2%;
+        left: 30%;
+        margin-right: 0;
+        text-align: right;
+      }
+
+      @media screen and (min-width: 375px) {
+        #cry {
+          display: inline;
+          position: absolute;
+          width: 35%;
+          bottom: 0;
+          left: 30%;
+          margin-right: 0;
+          text-align: right;
+        }
+      }
+
+      @media screen and (min-width: 490px) {
+        #cry {
+          display: inline;
+          position: absolute;
+          width: 30%;
+          bottom: 0;
+          left: 60%;
+          margin-right: 0;
+          text-align: right;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        #cry {
+          display: inline;
+          position: absolute;
+          width: 20%;
+          bottom: 0;
+          left: 70%;
+          margin-right: 0;
+          text-align: right;
+        }
+      }
     </style>
   </head>
 
@@ -142,7 +194,7 @@
         </button>
       </div>
     </div>
-
+    <img id="cry" src="images/cry.gif" alt="crying" />
     <script>
       function onLoad() {
         cardPadding();
