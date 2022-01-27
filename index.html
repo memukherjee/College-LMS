@@ -119,6 +119,17 @@
 
     <script src="js/index.js"></script>
 
+
+    <script>
+      window.addEventListener("pageshow",(e)=>{
+        var historyTraversal = event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type===2);
+        if(historyTraversal){
+          window.location.reload();
+        }
+      })
+    </script>
+
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

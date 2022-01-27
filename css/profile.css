@@ -1,0 +1,53 @@
+#avatar{
+    width: 60%;
+    border: 5px rgb(212, 155, 31) solid;
+    border-radius: 100%;
+    margin: auto;
+    padding: 0;
+}
+#name{
+    color: rgb(194, 194, 194);
+    display: inline;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#dept{
+    color: rgb(194, 194, 194);
+    display: inline;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.card{
+    background-color: rgba(192, 192, 192, 0.384);
+    padding: 5% 7%;
+    border-radius: 15px;
+}
+
+.fa-edit{
+    position: relative;
+    left: 50%;
+}
+
+.card i{
+    color: rgb(255, 255, 255);
+}
+
+.card ul{
+    background-color: rgba(61, 61, 61, 0.247);
+    width: 50%;
+    min-width: 150px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.fa-github:hover{
+    color: #171515;
+}
+
+.fa-code:hover{
+    color: rgb(65, 255, 65);
+}

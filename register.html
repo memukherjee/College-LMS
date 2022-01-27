@@ -82,13 +82,13 @@
             <div class="form-floating col-12">
                 <select onchange="departmentLabelFormatter()" class="form-select dept-input" id="floatingSelect" aria-label="Floating label select example" required>
                     <option class="dept-option" selected disabled value="" ></option>
-                    <option class="dept-option" value="1">CSE</option>
-                    <option class="dept-option" value="2">IT</option>
-                    <option class="dept-option" value="3">ECE</option>
-                    <option class="dept-option" value="4">ME</option>
-                    <option class="dept-option" value="5">CE</option>
-                    <option class="dept-option" value="6">EE</option>
-                    <option class="dept-option" value="7">AEIE</option>
+                    <option class="dept-option" value="CSE">CSE</option>
+                    <option class="dept-option" value="IT">IT</option>
+                    <option class="dept-option" value="ECE">ECE</option>
+                    <option class="dept-option" value="ME">ME</option>
+                    <option class="dept-option" value="CE">CE</option>
+                    <option class="dept-option" value="EE">EE</option>
+                    <option class="dept-option" value="AEIE">AEIE</option>
                   </select>
                 <label
                   id="label-dept"
@@ -167,6 +167,15 @@
     </main>
 
     <script src="js/register.js"></script>
+
+    <script>
+      window.addEventListener("pageshow",(e)=>{
+        var historyTraversal = event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type===2);
+        if(historyTraversal){
+          window.location.reload();
+        }
+      })
+    </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script
