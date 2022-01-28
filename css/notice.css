@@ -1,0 +1,27 @@
+.container {
+    line-height: 2rem;
+}
+#carousel-notice {
+    margin-top: 3rem;
+    padding: 7% 15%;
+    background-color: #E8E8CC;
+}
+.carousel-item {
+    text-align: center;
+    
+}
+h1 {
+   
+    background-color: #E3D9CA;  
+    border: 0.5rem outset #95A792;
+    padding-bottom: 1rem;
+    
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Patua One', cursive;
+    font-size: 1rem;
+}
