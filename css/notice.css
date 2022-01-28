@@ -1,27 +1,67 @@
 .container {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 #carousel-notice {
-    margin-top: 3rem;
-    padding: 7% 15%;
-    background-color: #E8E8CC;
+  margin: 3rem 20%;
+  padding: 7% 10%;
+  background-color: #cccccc80;
+  border-radius: 15px;
 }
+
+@media screen and (max-width: 1000px) {
+  #carousel-notice {
+    margin: 3rem 15%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #carousel-notice {
+    margin: 3rem 0;
+  }
+}
+
+.carousel-btn{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
 .carousel-item {
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-item h3 {
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.carousel-item p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: justify;
+  word-wrap: break-word;
+  background-color: rgba(56, 56, 56, 0.308);
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-item p {
     text-align: center;
-    
+    word-wrap: break-word;
+  }
 }
-h1 {
-   
-    background-color: #E3D9CA;  
-    border: 0.5rem outset #95A792;
-    padding-bottom: 1rem;
-    
-}
-h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-}
-p{
-    font-family: 'Patua One', cursive;
-    font-size: 1rem;
+
+#heading {
+  background-color: #cccccc80;
+  padding: 10px 15px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
 }
