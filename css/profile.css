@@ -168,35 +168,37 @@
 }
 
 .fa-circle{
+  color: rgb(128, 128, 128);
+  transition: all;
+}
+
+.c:hover {
+  transform: scale(1.5);
+  transition-duration: 0.25s;
   color: #fff;
 }
 
-.c1:hover {
-  color: #ffef61;
-}
-.c2:hover {
-  color: #e6412b;
-}
-.c3:hover {
-  color: #0ebb1d;
-}
-.c4:hover {
-  color: #1083e0;
-}
-
 .yellow{
+  transform: scale(1.25);
+  transition-duration: 0.25s;
   color: #ffef61;
 }
 
 .red{
+  transform: scale(1.25);
+  transition-duration: 0.25s;
   color: #e6412b;
 }
 
 .green{
+  transform: scale(1.25);
+  transition-duration: 0.25s;
   color: #0ebb1d;
 }
 
 .blue{
+  transform: scale(1.25);
+  transition-duration: 0.25s;
   color: #1083e0;
 }
 

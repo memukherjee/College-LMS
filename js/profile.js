@@ -35,16 +35,30 @@ document.getElementById('image-edit').addEventListener('mouseout',()=>{
   document.getElementById('avatar').classList.remove('blur')
 })
 
-function circleColor(){
-  const colors = ['yellow','red','green','blue']
-  const circles = document.querySelectorAll('.fa-circle')
-  console.log(circles);
-  let i=0
-  let interval = null
-  circles.forEach((e)=>{
-    interval = setInterval(()=>{
-      e.classList.add(colors[i++])
-    },1000)
-  })
-  window.clearInterval(interval)
+let i=0;
+let timer = setInterval(circleColor,500);
+const colors = ['yellow','red','green','blue']
+let key = 0
+async function circleColor(){
+  const circles = document.querySelectorAll('.fa-circle')[i]
+  circles.classList.add(colors[(i+key)%4])
+  if(i === 3){
+    await sleep(500);
+    document.querySelectorAll('.fa-circle').forEach((e)=>{
+      e.classList.remove('red','yellow','green','blue')
+    })
+    i=-1
+    key++
+  }
+  i++
 }
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function complete(){
+  clearInterval(timer)
+  timer = null
+}
+
