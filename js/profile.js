@@ -10,7 +10,6 @@ function matchPass() {
 myStorage = window.localStorage;
 if(!myStorage.getItem('profileImg'))
   myStorage.setItem('profileImg','0.svg')
-console.log(myStorage.getItem('profileImg'));
 document.getElementById('avatar').src = `images/avatars/${myStorage.getItem('profileImg')}`
 
 function modalClear(){
@@ -35,3 +34,17 @@ document.getElementById('image-edit').addEventListener('mouseover',()=>{
 document.getElementById('image-edit').addEventListener('mouseout',()=>{
   document.getElementById('avatar').classList.remove('blur')
 })
+
+function circleColor(){
+  const colors = ['yellow','red','green','blue']
+  const circles = document.querySelectorAll('.fa-circle')
+  console.log(circles);
+  let i=0
+  let interval = null
+  circles.forEach((e)=>{
+    interval = setInterval(()=>{
+      e.classList.add(colors[i++])
+    },1000)
+  })
+  window.clearInterval(interval)
+}

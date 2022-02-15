@@ -27,9 +27,6 @@
   border-radius: 15px;
 }
 
-.card li i {
-  color: #fff;
-}
 
 .btn-edit {
   width: max-content;
@@ -170,12 +167,37 @@
   /* margin: 1px; */
 }
 
-.fa-github:hover {
-  color: #171515;
+.fa-circle{
+  color: #fff;
 }
 
-.fa-code:hover {
-  color: rgb(65, 255, 65);
+.c1:hover {
+  color: #ffef61;
+}
+.c2:hover {
+  color: #e6412b;
+}
+.c3:hover {
+  color: #0ebb1d;
+}
+.c4:hover {
+  color: #1083e0;
+}
+
+.yellow{
+  color: #ffef61;
+}
+
+.red{
+  color: #e6412b;
+}
+
+.green{
+  color: #0ebb1d;
+}
+
+.blue{
+  color: #1083e0;
 }
 
 #details {
