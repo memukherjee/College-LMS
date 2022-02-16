@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(
+      -45deg,
+      #040d21,
+      #391d86,
+      #481f49,
+      #391d86,
+      #040d21
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  #title {
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+    font-weight:600;
+    font-size: 2rem;
+    word-break: keep-all;
+  }
+  
+  .card {
+      margin: auto;
+    padding: 5%;
+    border-radius: 5%;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    min-width: 250px;
+    transition-delay: 0s;
+    max-width: 500px;
+  }
+  
+  form {
+    min-width: 100px;
+  }
+  
+  #label-dept,
+  #label-year {
+    text-align: left;
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 100;
+    padding-right: 0;
+    white-space: nowrap;
+  }
+  
+  .dept-input,.year-input {
+    background: transparent;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0%;
+    color: #fff;
+    border-bottom: 2px solid #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .dept-option,.year-option {
+    background: rgba(99, 49, 126, 0.5);
+    color: #000;
+  }
+  
+  .form-signin input:focus,
+  .form-signin select:focus {
+    border: none;
+    border-radius: 0%;
+    border-bottom: 2px solid #ffffff;
+    color: #fff;
+    box-shadow: none;
+  }
+  
+  .btn-login {
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .card-padding{
+    padding: 5vh 20%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  
+  .dept-blank {
+    opacity: 1 !important;
+    transform: scale(1) translateY(0rem) translateX(0rem) !important;
+  }
+  
+  .year-blank{
+    opacity: 1 !important;
+    transform: scale(1) translateY(0rem) translateX(0rem) !important;
+  }
+
+  #routine-img {
+      color: white;
+  }
