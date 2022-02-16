@@ -57,8 +57,8 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function complete(){
-  clearInterval(timer)
-  timer = null
-}
+// function complete(){
+//   clearInterval(timer)
+//   timer = null
+// }
 
