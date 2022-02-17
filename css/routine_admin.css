@@ -127,6 +127,7 @@ input:-webkit-autofill:focus input:-webkit-autofill {
   outline: none;
   white-space: nowrap;
   -webkit-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
