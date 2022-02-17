@@ -1,0 +1,5 @@
+ <script type="text/javascript">
+          function preventBack(){window.history.forward()};
+          setTimeout(" preventBack()",-1);
+          window.onunload=function(){null};
+ </script>
