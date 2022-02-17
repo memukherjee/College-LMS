@@ -1,25 +1,3 @@
-function removeWork(e){
-    let currentData = e.parentElement.parentElement.parentElement
-    const rejectedInput = document.getElementById('rejectedId')
-    if(rejectedInput.value==="")
-        rejectedInput.value=currentData.firstElementChild.innerText
-    else
-        rejectedInput.value = rejectedInput.value+","+currentData.firstElementChild.innerText
-    // console.log(rejectedInput.value);
-    currentData.remove()
-}
-
-function approved(e){
-    let currentData = e.parentElement.parentElement.parentElement
-    const acceptedInput = document.getElementById('acceptedId')
-    if(acceptedInput.value==="")
-        acceptedInput.value=currentData.firstElementChild.innerText
-    else
-        acceptedInput.value = acceptedInput.value+","+currentData.firstElementChild.innerText
-    // console.log(acceptedInput.value);
-    currentData.remove()
-}
-
 function editEntry(e){
     let currentBtn = e.parentElement.parentElement
     let currentPassword = currentBtn.previousElementSibling

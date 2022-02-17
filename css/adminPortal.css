@@ -18,7 +18,11 @@ html,body,main{
 }
 
 .btn-close:hover{
-    color: rgb(207, 0, 0);
+    color: #cf0000;
+}
+
+.btn:focus{
+    border-color: initial;
 }
 
 table{
@@ -50,8 +54,8 @@ tbody tr:hover{
 thead th:hover{
     background-color: rgb(48, 48, 48, 0.664);
 }
-
-.btn-modal{
+.btn-outline-light,
+.btn-warning{
     font-size: 2rem;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;

@@ -127,6 +127,12 @@ main > .container {
   width: 100%;
 }
 
+.form-select:focus,
+.btn:focus{
+  box-shadow: none;
+  border-color: initial;
+}
+
 .fa-facebook:hover {
   color: #4267b2;
 }
