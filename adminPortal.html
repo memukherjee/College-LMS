@@ -177,9 +177,16 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-success">
-                      Save changes
-                    </button>
+                    <form action="/" method="post">
+                      <input id="acceptedId" type="hidden" name="accepted" value="">
+                      <input id="rejectedId" type="hidden" name="rejected" value="">
+                      <button type="submit" class="btn btn-success">
+                        Save changes
+                      </button>
+                    </form>
+
+
+                    
                   </div>
                 </div>
               </div>
@@ -315,9 +322,13 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-success">
-                      Save changes
-                    </button>
+                    <form action="/" method="post">
+                      <input id="deletedId" type="hidden" name="deleted" value="">
+                      <button type="submit" class="btn btn-success">
+                        Save changes
+                      </button>
+                    </form>
+                    
                   </div>
                 </div>
               </div>
@@ -332,7 +343,7 @@
                     <button type="button" class="btn-outline-danger" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <form action="/" method="post">
                       <div class="mb-3 text-start">
                         <label class="text-light" for="exampleInputId1" class="form-label">ID</label>
                         <input type="text" class="form-control" name="id" id="exampleInputId1" disabled>
