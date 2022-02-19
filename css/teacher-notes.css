@@ -1,0 +1,22 @@
+.titleHeading{
+    color: #E5E3C9;
+    font-weight: bold;
+}
+.form-frame{
+    width: 500px;
+    height: 600px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.dept{
+   margin: 50px auto 20px;
+
+}
+.year{
+    margin: 25px auto;
+}
+
+.fileText{
+    text-align: left;
+    font-size: 1.2rem;
+    color: #E5E3C9;
+}
