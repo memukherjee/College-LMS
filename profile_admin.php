@@ -319,7 +319,7 @@ session_Start();
     <!-- Footer -->
     <div class="footer-college"></div>
 
-    <script src="js/templete.js"></script>
+    <script src="js/templete_admin.js"></script>
     <script src="js/profile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
     <script

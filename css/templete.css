@@ -130,7 +130,6 @@ main > .container {
 .form-select:focus,
 .btn:focus{
   box-shadow: none;
-  border-color: initial;
 }
 
 .fa-facebook:hover {

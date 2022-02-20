@@ -53,16 +53,17 @@
     <div class="navbar-college"></div>
 
     <!-- Content -->
-    <main class="flex-shrink-0">
+    <main class="flex-shrink-0 mt-5 mb-5">
       <div class="container form-frame">
         <!-- Write from here -->
-        
-        <form action="" method="post">
-            <h2 class="titleHeading">Upload Notes</h1>
+        <div class="card">
           
-            <div class="form-floating dept">
-                <select class="form-select" id="departmentSelect" required>
-                  <option selected disabled="true">Department</option>
+        <h2 class="titleHeading mb-3">Upload Notes</h1>
+
+        <form action="/" method="post">
+            <div class="form-floating dept mb-4">
+                <select onchange="selectOptionBlank()" class="form-select" id="departmentSelect" required>
+                  <option selected disabled="true"></option>
                   <option value="CSE">CSE</option>
                   <option value="IT">IT</option>
                   <option value="ECE">ECE</option>
@@ -71,37 +72,36 @@
                   <option value="EE">EE</option>
                   <option value="AEIE">AEIE</option>
                 </select>
-                <label for="departmentSelect">Department</label>
+                <label class="labelSelect" for="departmentSelect">Department</label>
             </div>
 
-            <div class="form-floating year">
-              <select class="form-select " id="semesterSelect" required>
-                <option selected disabled="true">Year</option>
+            <div class="form-floating year mb-4">
+              <select onchange="selectOptionBlank()" class="form-select " id="semesterSelect" required>
+                <option selected disabled="true"></option>
                 <option value="1">1st</option>
                 <option value="2">2nd</option>
                 <option value="3">3rd</option>
                 <option value="4">4th</option>
               </select>
-              <label for="semesterSelect">Year</label>
+              <label class="labelSelect" for="semesterSelect">Year</label>
             </div>
 
-            <div class="form-floating mb-3">
+            <div class="form-floating mb-4">
               <input type="text" class="form-control" id="textInput" placeholder="Topic Name" required>
               <label for="textInput">Topic Name</label>
             </div>
 
             <div class="mb-3">
-              <!-- <label for="formFileMultiple"  class="form-label fileText" style="text-align: left;">Select the Files to Upload</label> -->
-              <p class="fileText">Select the Files to Upload</p>
-              <input class="form-control" type="file" id="formFileMultiple" multiple required>
+              <input class="form-control file-input" type="file" id="formFileMultiple" required>
             </div>
 
             <div class="button-field">
-              <input class="btn btn-lg btn-outline-primary rounded-pill" type="submit" value="Upload" style="margin-top: 25px;">
+              <input class="btn btn-lg btn-outline-light rounded-pill" type="submit" value="Upload" style="margin-top: 25px;">
             </div>
 
       </form>
 
+    </div>
 
 
 
@@ -113,6 +113,19 @@
     <div class="footer-college"></div>
 
     <script src="js/templete.js"></script>
+    <script src="js/notes_teacher.js"></script>
+    <script>
+      window.addEventListener( "pageshow", function ( event ) {
+        var historyTraversal = event.persisted || 
+                              ( typeof window.performance != "undefined" && 
+                                    window.performance.navigation.type === 2 );
+        if ( historyTraversal ) {
+          // Handle page restore.
+          window.location.reload();
+        }
+      })
+      selectOptionBlank();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
