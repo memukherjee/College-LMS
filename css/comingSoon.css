@@ -38,3 +38,26 @@ body {
   border-radius: 25px;
   transition: all 1s linear;
 }
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    hsla(268, 100%, 74%, 0.75) 0%,
+    hsla(216, 77%, 51%, 0.74) 51%,
+    #b87aff79 100%
+  );
+}
+.btn-grad {
+  border: 2px solid #fff;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+}
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
