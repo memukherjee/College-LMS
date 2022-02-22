@@ -1,0 +1,40 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #f7ddbd,
+    #6100a1,
+    #37aab9,
+    #6100a1,
+    #f7ddbd
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-darkgrey {
+  background-color: rgba(255, 255, 255, 0.13);
+  margin: auto;
+  width: 50%;
+  opacity: 0;
+  position: relative;
+  top: 15%;
+  border-radius: 25px;
+  transition: all 1s linear;
+}
