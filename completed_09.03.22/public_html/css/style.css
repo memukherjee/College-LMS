@@ -1,0 +1,176 @@
+body {
+  background: linear-gradient(
+    -45deg,
+    #040d21,
+    #391d86,
+    #481f49,
+    #391d86,
+    #040d21
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.logo {
+  width: 40%;
+}
+
+#title {
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  word-break: keep-all;
+}
+
+.card {
+  padding: 5%;
+  border-radius: 5%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  min-width: 250px;
+}
+
+/* @media screen and (min-width: 500px) { */
+  .card-padding {
+    padding: 5vh 20%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+/* } */
+
+/* @media screen and (max-width: 500px) {
+  .card {
+    padding: 5vh 20%;
+  }
+} */
+form {
+  min-width: 100px;
+}
+
+#label-password,
+#label-email {
+  text-align: left;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  padding-right: 0;
+  white-space: nowrap;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.email-input {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 0%;
+  color: #fff;
+  border-bottom: 2px solid #ffffff;
+  background: transparent !important;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+}
+
+.password-input {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0%;
+  color: #fff;
+  border-bottom: 2px solid #ffffff;
+  background: transparent !important;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+}
+
+.form-signin input:focus {
+  border: none;
+  border-radius: 0%;
+  border-bottom: 2px solid #ffffff;
+  color: #fff;
+  box-shadow: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+  border: none;
+  caret-color: #fff;
+  border-bottom: 2px solid #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#show-password {
+  border: none;
+  margin-left: -45px;
+  z-index: 2;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+#show-password:hover {
+  background-color: transparent;
+  color: rgb(201, 201, 201);
+}
+
+#show-password:focus {
+  box-shadow: none;
+}
+
+.btn-login {
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  color: #040d21;
+}
+.btn-login:focus {
+  box-shadow: none;
+}
+
+img[src="https://cdn.000webhost.com/000webhost_war-message_small.png"] {
+    display:none !important;
+    opacity:0 !important;
+    visibility:hidden;
+}

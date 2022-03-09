@@ -1,0 +1,161 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    #040d21,
+    #1b18b1,
+    #6c50a1,
+    #1b18b1,
+    #040d21
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  padding: 1% 2%;
+  text-align: center;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0 3%;
+}
+
+.navbar-toggler {
+  box-shadow: none;
+  border-width: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar {
+  background-color: #0f082241;
+  border-radius: 15px;
+}
+
+.navbar-brand {
+  margin: 0;
+  width: 15%;
+}
+
+.navbar-brand img {
+  display: inline-block;
+  width: 25%;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-brand img {
+    display: none;
+  }
+}
+
+.brand-name {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar-nav {
+  margin-right: 0;
+}
+
+.nav-item {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.dropdown-menu {
+  text-align: center;
+  background-color: transparent;
+  border-color: #fff;
+  border-radius: 5px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  color: #000;
+  background-color: rgba(211, 211, 211, 0.342);
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+
+.foot {
+  text-align: center;
+  background-color: #0f082241;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  min-width: 170px;
+}
+
+
+.foot p {
+  text-align: center;
+  width: 100%;
+}
+
+.form-select:focus,
+.btn:focus{
+  box-shadow: none;
+}
+
+.fa-facebook:hover {
+  color: #4267b2;
+}
+
+.fa-instagram:hover {
+  color: #f56040;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-globe:hover {
+  color: #1fa767;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+img[src="https://cdn.000webhost.com/000webhost_war-message_small.png"] {
+    display:none;
+}
+
+.disclaimer{
+    display:none;
+}

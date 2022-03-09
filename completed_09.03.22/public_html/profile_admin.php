@@ -1,3 +1,9 @@
+<?php
+session_Start();
+if($_SESSION['status']!=true){
+    header("Location: index.html");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,7 +63,7 @@
       <div class="container">
         <!-- Write from here -->
         <div class="row row-cols-3">
-          <div class="col-12 col-md-4 mb-2">
+          <div class="col-12" style="max-width: 450px; margin: auto;">
             <div class="card text-center">
               <button
                 class="btn btn-edit"
@@ -92,7 +98,7 @@
                         <i class="fas fa-2x fa-times"></i>
                       </button>
                     </div>
-                    <form action="/" method="post">
+                    <form action="profileconn_admin.php" method="post">
                       <div class="modal-body">
                         <div class="form-floating mb-3">
                           <input
@@ -280,8 +286,8 @@
                 </div>
               </div>
 
-              <h2 id="name">Akash Mukherjee</h2>
-              <h3 id="dept">Student of <span id="department">IT</span> Department</h3>
+              <h2 id="name"><?php echo $_SESSION['nm'];?></h2>
+              <h3 id="dept">Administrator</h3>
               <ul class="nav col-md-12 justify-content-center">
                 <li class="nav-item">
                   <a href="#" class="nav-link px-2 text-muted"
@@ -305,34 +311,6 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-8">
-            <div id="details" class="card text-center">
-              <table class="table table-borderless text-light">
-                <tbody>
-                  <tr>
-                    <th scope="row">Id</th>
-                    <td>#9017</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Role</th>
-                    <td>Student</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Department</th>
-                    <td>IT</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Year</th>
-                    <td>3rd</td>
-                  </tr>
-                  <tr id="last-tr">
-                    <th scope="row">Email id</th>
-                    <td>akash3.11.2000@gmail.com</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
 
         </div>
 
@@ -343,7 +321,7 @@
     <!-- Footer -->
     <div class="footer-college"></div>
 
-    <script src="js/templete.js"></script>
+    <script src="js/templete_admin.js"></script>
     <script src="js/profile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
     <script
@@ -351,5 +329,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- <script>
+        circleColor()
+    </script> -->
   </body>
 </html>

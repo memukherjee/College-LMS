@@ -245,3 +245,17 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px none;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+/*.table{*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  align-content: center;*/
+/*  justify-content: center;*/
+/*  table-layout: inherit;*/
+/*}*/
+
+/*th,td{*/
+/*  word-wrap: break-word;*/
+/*  align-content: center;*/
+/*  justify-content: center;*/
+/*}*/

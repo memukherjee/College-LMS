@@ -1,0 +1,83 @@
+html,body,main{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    max-width: 100%;
+}
+
+#modal-close-btn{
+    color: #fff;
+}
+#modal-close-btn:hover{
+    color: red;
+}
+.modal-content{
+    background-color: rgba(44, 44, 44, 0.75);
+}
+
+.btn-close:hover{
+    color: #cf0000;
+}
+
+.btn:focus{
+    border-color: initial;
+}
+
+table{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media screen and (max-width: 775px) {
+    .container{
+        width: 100%;
+        margin: auto 0;
+    }
+}
+
+th,td{
+    color: #fff;
+    overflow-wrap: anywhere;
+    border: none;
+}
+
+
+tbody tr:hover{
+    /* border: 2px solid #fff !important; */
+    background-color: rgb(48, 48, 48, 0.664);
+}
+
+thead th:hover{
+    background-color: rgb(48, 48, 48, 0.664);
+}
+.btn-outline-light,
+.btn-warning{
+    font-size: 2rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.modal-title{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+.footer-college{
+    margin-top: 18%;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-college{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-college{
+        margin-top: 40%;
+    }
+}

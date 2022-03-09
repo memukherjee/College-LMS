@@ -1,0 +1,85 @@
+.titleHeading {
+  color: #ffffff;
+  font-weight: bold;
+}
+.form-frame {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main .container{
+    padding: 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 3% 5%;
+  border-radius: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+.fileText {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-control,
+.form-select {
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+option {
+  background: rgba(140, 73, 160, 0.322);
+  color: #000;
+}
+
+label {
+  color: #fff;
+}
+
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.file-input::before {
+  content: "Upload files";
+  display: inline-block;
+  background-color: #9e9e9e4f;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.file-input:hover::before {
+  background-color: #ffffff;
+  color: #051231;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+  border: none;
+  caret-color: #fff;
+  border-bottom: 2px solid #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.blank {
+  opacity: 1 !important;
+  transform: scale(1) translateY(0rem) translateX(0rem) !important;
+}

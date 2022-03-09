@@ -1,3 +1,10 @@
+<?php
+session_Start();
+if($_SESSION['status']!=true){
+    header("Location: index.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -92,7 +99,7 @@
                         <i class="fas fa-2x fa-times"></i>
                       </button>
                     </div>
-                    <form action="/" method="post">
+                    <form action="profileconn.php" method="post">
                       <div class="modal-body">
                         <div class="form-floating mb-3">
                           <input
@@ -279,11 +286,11 @@
                   </div>
                 </div>
               </div>
-
-              <h2 id="name">Akash Mukherjee</h2>
-              <h3 id="dept">Student of <span id="department">IT</span> Department</h3>
+              
+              <h2 id="name"><?php echo $_SESSION['nms'];?></h2>
+              <h3 id="dept"><span id="department"><?php echo $_SESSION['depts'];?></span> Department</h3>
               <ul class="nav col-md-12 justify-content-center">
-                <li class="nav-item">
+              <li class="nav-item">
                   <a href="#" class="nav-link px-2 text-muted"
                     ><i class="fad fa-circle c"></i></a>
                 </li>
@@ -311,23 +318,25 @@
                 <tbody>
                   <tr>
                     <th scope="row">Id</th>
-                    <td>#9017</td>
+                    <td>#<?php echo $_SESSION['iD'];?></td>
                   </tr>
                   <tr>
                     <th scope="row">Role</th>
-                    <td>Student</td>
+                    <td><?php error_reporting(0);
+                    if($_SESSION['year']=='NA'){echo 'Teacher';}
+                    else{echo "Student";}?></td>
                   </tr>
                   <tr>
                     <th scope="row">Department</th>
-                    <td>IT</td>
+                    <td><?php echo $_SESSION['depts'];?></td>
                   </tr>
                   <tr>
                     <th scope="row">Year</th>
-                    <td>3rd</td>
+                    <td><?php echo $_SESSION['year']?></td>
                   </tr>
                   <tr id="last-tr">
                     <th scope="row">Email id</th>
-                    <td>akash3.11.2000@gmail.com</td>
+                    <td><?php echo $_SESSION['eml'];?></td>
                   </tr>
                 </tbody>
               </table>
